@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snake.MainActivitySnake">
+
+  <com.example.snake.SnakePanelView
+      android:id="@+id/snake_view"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_above="@id/button_container"
+      android:layout_alignParentTop="true" />
+
+  <LinearLayout
+      android:id="@+id/button_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="16dp"
+      android:layout_marginBottom="80dp">
+
+
+    <Button
+        android:id="@+id/top_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_btn_background"
+        android:text="TOP"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+      <Button
+          android:id="@+id/left_btn"
+          android:layout_width="120dp"
+          android:layout_height="40dp"
+          android:layout_marginEnd="8dp"
+          android:background="@drawable/direction_btn_background"
+          android:text="LEFT"
+          android:textColor="@android:color/white" />
+
+      <Button
+          android:id="@+id/right_btn"
+          android:layout_width="120dp"
+          android:layout_height="40dp"
+          android:layout_marginStart="8dp"
+          android:background="@drawable/direction_btn_background"
+          android:text="RIGHT"
+          android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bottom_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/direction_btn_background"
+        android:text="BOTTOM"
+        android:textColor="@android:color/white" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="16dp"
+      android:layout_centerHorizontal="true"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/go_back_btn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/restart_btn_background"
+        android:text="GO BACK"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:background="@drawable/restart_btn_background"
+        android:text="START"
+        android:textColor="@android:color/white" />
+  </LinearLayout>
+
+</RelativeLayout>
